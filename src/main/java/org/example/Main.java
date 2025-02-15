@@ -28,6 +28,10 @@ public class Main {
         person.playWithDog();
         person.takeDogToVet();
 
+        dog.eat();
+
+
+
         context.close();
     }
 }

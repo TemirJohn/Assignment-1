@@ -1,11 +1,16 @@
 package org.example.Beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Dog {
     private String name;
     private String breed;
+
+    @Autowired
+    private Food food;
+
 
     public Dog() {
         this.name = "Buddy";
@@ -38,5 +43,9 @@ public class Dog {
 
     public void bark() {
         System.out.println("Waw-Waw!");
+    }
+
+    public void eat() {
+        food.eat();
     }
 }
