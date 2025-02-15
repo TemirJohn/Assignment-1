@@ -22,6 +22,9 @@ public class Main {
         System.out.println();
         person.sayHello();
 
+        dog.bark();
+
+
         person.playWithDog();
         person.takeDogToVet();
 
